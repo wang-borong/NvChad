@@ -10,14 +10,14 @@ M.general = {
    i = {
 
       -- go to  beginning and end
-      ["<C-b>"] = { "<ESC>^i", "論 beginning of line" },
-      ["<C-e>"] = { "<End>", "壟 end of line" },
+      -- ["<C-b>"] = { "<ESC>^i", "論 beginning of line" },
+      -- ["<C-e>"] = { "<End>", "壟 end of line" },
 
       -- navigate within insert mode
-      ["<C-h>"] = { "<Left>", "  move left" },
-      ["<C-l>"] = { "<Right>", " move right" },
-      ["<C-j>"] = { "<Down>", " move down" },
-      ["<C-k>"] = { "<Up>", " move up" },
+      -- ["<C-h>"] = { "<Left>", "  move left" },
+      -- ["<C-l>"] = { "<Right>", " move right" },
+      -- ["<C-j>"] = { "<Down>", " move down" },
+      -- ["<C-k>"] = { "<Up>", " move up" },
    },
 
    n = {
