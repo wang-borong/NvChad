@@ -9,14 +9,14 @@ local M = {}
 M.general = {
   i = {
     -- go to  beginning and end
-    ["<C-b>"] = { "<ESC>^i", "beginning of line" },
-    ["<C-e>"] = { "<End>", "end of line" },
+    -- ["<C-b>"] = { "<ESC>^i", "beginning of line" },
+    -- ["<C-e>"] = { "<End>", "end of line" },
 
     -- navigate within insert mode
-    ["<C-h>"] = { "<Left>", "move left" },
-    ["<C-l>"] = { "<Right>", "move right" },
-    ["<C-j>"] = { "<Down>", "move down" },
-    ["<C-k>"] = { "<Up>", "move up" },
+    -- ["<C-h>"] = { "<Left>", "move left" },
+    -- ["<C-l>"] = { "<Right>", "move right" },
+    -- ["<C-j>"] = { "<Down>", "move down" },
+    -- ["<C-k>"] = { "<Up>", "move up" },
   },
 
   n = {
@@ -29,10 +29,10 @@ M.general = {
     ["<C-k>"] = { "<C-w>k", "window up" },
 
     -- save
-    ["<C-s>"] = { "<cmd> w <CR>", "save file" },
+    -- ["<C-s>"] = { "<cmd> w <CR>", "save file" },
 
     -- Copy all
-    ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },
+    -- ["<C-c>"] = { "<cmd> %y+ <CR>", "copy whole file" },
 
     -- line numbers
     ["<leader>n"] = { "<cmd> set nu! <CR>", "toggle line number" },
@@ -82,14 +82,14 @@ M.tabufline = {
 
   n = {
     -- cycle through buffers
-    ["<TAB>"] = {
+    ["<A-j>"] = {
       function()
         require("nvchad_ui.tabufline").tabuflineNext()
       end,
       "goto next buffer",
     },
 
-    ["<S-Tab>"] = {
+    ["<A-k>"] = {
       function()
         require("nvchad_ui.tabufline").tabuflinePrev()
       end,
